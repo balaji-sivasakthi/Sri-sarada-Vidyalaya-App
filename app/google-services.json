@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071963537983",
+    "firebase_url": "https://sri-sarada-vidyalaya.firebaseio.com",
+    "project_id": "sri-sarada-vidyalaya",
+    "storage_bucket": "sri-sarada-vidyalaya.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071963537983:android:079b3662d2394a9d672e8a",
+        "android_client_info": {
+          "package_name": "com.latrosoft.srisaradavidyalaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071963537983-baro0kk9doitj08rntvn2knqissd1dbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.latrosoft.srisaradavidyalaya",
+            "certificate_hash": "a20d4ca282979c34ce1f5bcce503826a1db2707e"
+          }
+        },
+        {
+          "client_id": "1071963537983-2tgb7qhisgredtmgglqec5qetpfljnci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsW5w0Q4uXHXLWd310vbb2MsRzdJToUTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071963537983-2tgb7qhisgredtmgglqec5qetpfljnci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
