@@ -28,9 +28,11 @@ public class home extends AppCompatActivity implements View.OnClickListener {
         CardView mVideo =  findViewById(R.id.videoCard);
         CardView  mResult = findViewById(R.id.resultCard);
         CardView mMaterial = findViewById(R.id.materialCard);
+        CardView mNoti = findViewById(R.id.notificationCard);
         mVideo.setOnClickListener(this);
         mResult.setOnClickListener(this);
         mMaterial.setOnClickListener(this);
+        mNoti.setOnClickListener(this);
 
 
 
@@ -53,6 +55,10 @@ public class home extends AppCompatActivity implements View.OnClickListener {
             case R.id.materialCard:
                 i = new Intent(home.this,online.class);
                 i.putExtra("Page", materialString);
+                startActivity(i);
+                break;
+            case R.id.notificationCard:
+                i = new Intent(home.this,Notification.class);
                 startActivity(i);
                 break;
             default:
