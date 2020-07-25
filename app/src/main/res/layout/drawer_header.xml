@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp">
+<LinearLayout
+    android:background="@drawable/rec3"
+    android:orientation="horizontal"
+    android:padding="10dp"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="150dp"
-    android:background="@drawable/rec3">
-
+    android:layout_height="match_parent">
     <ImageView
         android:id="@+id/pro_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         android:src="@drawable/question"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        android:layout_width="100dp"
+        android:layout_height="100dp"></ImageView>
     <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
         android:fontFamily="@font/baloo_tamma"
-        android:gravity="start|center"
-        android:textSize="26sp"
         android:layout_marginLeft="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/pro_image"
+        android:layout_marginTop="26dp"
+        android:textSize="26dp"
         android:text="Balaji Sivasakthi"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pro_image">
+
+    </TextView>
+</LinearLayout>
+</LinearLayout>

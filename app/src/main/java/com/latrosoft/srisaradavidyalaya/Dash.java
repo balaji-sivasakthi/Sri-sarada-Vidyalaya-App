@@ -1,12 +1,12 @@
 package com.latrosoft.srisaradavidyalaya;
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Parcelable;
+import android.view.View;
+import android.widget.Button;
 
 public class Dash extends AppCompatActivity {
     final  String online_test ="https://www.srisaradavidyalaya.com/wp-login.php";
@@ -14,7 +14,7 @@ public class Dash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash);
-     /*   Button btn = findViewById(R.id.next);
+        Button btn = findViewById(R.id.next);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,18 +29,6 @@ public class Dash extends AppCompatActivity {
                 Intent i = new Intent(Dash.this,online.class);
                 i.putExtra("Page", online_test);
                 startActivity(i);
-            }
-        });*/
-
-
-        final DrawerLayout mDrawer = findViewById(R.id.drawerLayout);
-        ImageView drawerIcon = findViewById(R.id.nav);
-        drawerIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mDrawer.isDrawerOpen(GravityCompat.START)) {
-                    mDrawer.closeDrawer(GravityCompat.START);
-                } else mDrawer.openDrawer(GravityCompat.START);
             }
         });
     }

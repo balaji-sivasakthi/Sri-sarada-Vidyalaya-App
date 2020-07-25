@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/pro"
-        android:icon="@drawable/profile"
-        android:title="Profile" />
-    <item
-        android:id="@+id/news"
+<item android:id="@+id/pro"
+    android:icon="@drawable/profile"
+    android:title="Profile">
+</item>
+    <item android:id="@+id/news"
         android:icon="@drawable/news"
-        android:title="News" />
-    <item
-        android:id="@+id/vid"
+        android:title="News">
+    </item>
+    <item android:id="@+id/vid"
         android:icon="@drawable/mdi_slow_motion_video"
-        android:title="Video" />
-    <item
-        android:id="@+id/share"
+        android:title="Video">
+    </item>
+    <item android:id="@+id/share"
         android:icon="@drawable/ic_share"
-        android:title="Share" />
-    <item
-        android:id="@+id/Rate"
+        android:title="Share">
+    </item>
+    <item android:id="@+id/Rate"
         android:icon="@drawable/ic_rate"
-        android:title="Rate &amp; Review" />
+        android:title="Rate &amp; Review">
+    </item>
 </menu>
