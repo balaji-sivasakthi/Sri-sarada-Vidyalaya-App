@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueColor"
+    tools:context=".online">
+    <LinearLayout
+        android:id="@+id/topPanel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/image"
+            android:src="@drawable/ssv"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amita_bold"
+                android:text="@string/sri_sarada_vidyalaya">
+
+            </TextView>
+            <TextView
+
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/amita_bold"
+                android:text="@string/matric_hr_sec_school_ulundurpet">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/main"
+        android:layout_below="@id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:src="@drawable/rec">
+    </ImageView>
+    <LinearLayout
+        android:layout_below="@id/main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1932953257399146/9268381822">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

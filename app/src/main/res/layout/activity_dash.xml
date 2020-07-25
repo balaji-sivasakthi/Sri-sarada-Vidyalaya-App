@@ -2,103 +2,113 @@
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-   android:id="@+id/drawerLayout"
     android:layout_height="match_parent"
-    tools:openDrawer="start"
     tools:context=".Dash">
-   <com.google.android.material.navigation.NavigationView
-       android:layout_gravity="start"
-      app:headerLayout="@layout/drawer_header"
-      app:menu="@menu/main_menu"
-       app:itemBackground="@color/White"
-       android:layout_width="wrap_content"
-       android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/White"
+        app:headerLayout="@layout/drawer_header"
+        app:itemBackground="@color/White"
+        app:menu="@menu/main_menu" />
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <RelativeLayout
             android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize">
+
             <ImageView
-                android:background="@color/White"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_centerVertical="true"
                 android:id="@+id/nav"
-                android:src="@drawable/ic_nav"
                 android:layout_width="32dp"
-                android:layout_height="32dp">
-            </ImageView>
-            <ImageView
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
                 android:background="@color/White"
+                android:src="@drawable/ic_nav"
+                android:layout_marginStart="16dp" />
+
+            <ImageView
+                android:id="@+id/not"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_centerVertical="true"
-                android:layout_width="32dp"
-                android:id="@+id/not"
+                android:background="@color/White"
                 android:src="@drawable/ic_notification"
-                android:layout_height="32dp"
-                android:layout_alignParentRight="true">
-            </ImageView>
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true" />
         </RelativeLayout>
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom"
-            app:labelVisibilityMode="unlabeled"
-            android:background="@color/White"
-            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            app:menu="@menu/bottom_item">
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+            android:layout_alignParentBottom="true"
+            android:background="@color/White"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_item" />
+
         <RelativeLayout
-            android:layout_marginLeft="10dp"
             android:id="@+id/wel"
-            android:layout_below="@id/top"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
             <TextView
                 android:id="@+id/hello"
-                android:textSize="26dp"
-                android:text="Hello,"
-                android:fontFamily="@font/baloo_tamma"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_tamma"
+                android:text="Hello,"
+                android:textSize="26sp"/>
 
-            </TextView>
+
+
             <TextView
                 android:id="@+id/balaji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/hello"
                 android:fontFamily="@font/amita_bold"
-                android:textSize="24dp"
                 android:text="Balaji Sivasakthi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:textSize="24sp"/>
 
-            </TextView>
+
         </RelativeLayout>
+
         <ScrollView
-            android:scrollbars="none"
-            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@id/wel"
             android:layout_marginBottom="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:padding="10dp"
+            android:scrollbars="none">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
                 <TextView
-                    android:text="Quiz"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/baloo_tamma"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </TextView>
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo_tamma"
+                    android:text="Quiz"
+                    android:textSize="16sp" />
 
                 <RelativeLayout
 
@@ -115,7 +125,8 @@
                         android:fontFamily="@font/baloo_tamma"
                         android:text="Play Now"
                         android:textColor="@color/White"
-                        android:textSize="24dp"></TextView>
+                        android:textSize="24sp"
+                        android:layout_marginStart="20dp" />
 
                     <ImageView
                         android:layout_width="50dp"
@@ -123,18 +134,19 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/play">
+                        android:src="@drawable/play"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true">
 
                     </ImageView>
                 </RelativeLayout>
 
                 <TextView
-                    android:text="Videos"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/baloo_tamma"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </TextView>
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo_tamma"
+                    android:text="Videos"
+                    android:textSize="16sp" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -150,7 +162,8 @@
                         android:fontFamily="@font/baloo_tamma"
                         android:text="Study Now"
                         android:textColor="@color/White"
-                        android:textSize="24dp"></TextView>
+                        android:textSize="24sp"
+                        android:layout_marginStart="20dp" />
 
                     <ImageView
                         android:layout_width="100dp"
@@ -158,39 +171,45 @@
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="10dp"
-                        android:src="@drawable/question">
+                        android:src="@drawable/question"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp">
 
                     </ImageView>
                 </RelativeLayout>
 
                 <TextView
-                    android:text="Question &amp; Answer"
-                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/baloo_tamma"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </TextView>
+                    android:text="Question &amp; Answer"
+                    android:textSize="16sp" />
+
                 <RelativeLayout
-                    android:background="@drawable/rec3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rec3">
+
                     <TextView
-                        android:text="Ask Your Question"
-                        android:fontFamily="@font/baloo_tamma"
-                        android:textSize="24dp"
-                        android:textColor="@color/White"
-                        android:layout_marginLeft="20dp"
-                        android:layout_centerVertical="true"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-                    </TextView>
-                    <ImageView
-                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/question"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/baloo_tamma"
+                        android:text="Ask Your Question"
+                        android:textColor="@color/White"
+                        android:textSize="24sp"
+                        android:layout_marginStart="20dp" />
+
+                    <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:layout_alignParentRight="true">
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/question">
 
                     </ImageView>
                 </RelativeLayout>
