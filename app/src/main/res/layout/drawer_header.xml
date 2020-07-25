@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp">
+<LinearLayout
+    android:background="@drawable/rec3"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/pro_image"
+        android:src="@drawable/question"
+        android:layout_width="100dp"
+        android:layout_height="100dp"></ImageView>
+    <TextView
+        android:fontFamily="@font/baloo_tamma"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        android:textSize="26dp"
+        android:text="Balaji Sivasakthi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/pro_image">
+
+    </TextView>
+</LinearLayout>
+</LinearLayout>

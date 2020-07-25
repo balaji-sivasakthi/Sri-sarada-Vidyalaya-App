@@ -4,59 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blueColor"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_marginTop="100dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ssv"
-            android:layout_gravity="center">
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="150dp"
+    android:layout_centerInParent="true"
+   android:src="@drawable/logo"
+    android:layout_height="150dp">
 
-        </ImageView>
-        <TextView
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:textSize="24sp"
-            android:textColor="@color/White"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/amita_bold"
-            android:text="@string/sri_sarada_vidyalaya">
-
-        </TextView>
-        <TextView
-
-            android:gravity="center"
-            android:textSize="14sp"
-            android:textColor="@color/White"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/amita_bold"
-            android:text="@string/matric_hr_sec_school_ulundurpet">
-
-        </TextView>
-
-    </LinearLayout>
-
+</ImageView>
 
     <TextView
-        android:layout_width="match_parent"
+        android:fontFamily="@font/baloo_tamma"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="24sp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:gravity="center"
-
-        android:text="@string/developed_by_latrosoft_inc"
-        android:textColor="@color/White"
-        android:textSize="16sp">
+        android:layout_marginBottom="50dp"
+        android:text="@string/latrosoft"
+        android:textColor="#FC867F">
 
     </TextView>
 </RelativeLayout>
