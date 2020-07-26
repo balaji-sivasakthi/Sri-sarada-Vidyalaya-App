@@ -10,11 +10,18 @@ import android.view.View;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class home extends AppCompatActivity implements View.OnClickListener {
-
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference().child("web").child("login");
     String videoString ="https://www.srisaradavidyalaya.com/vedio-subjects/";
-      String resultString ="https://www.srisaradavidyalaya.com/wp-login.php";
+
+
      String materialString ="https://www.srisaradavidyalaya.com/materials/";
 
     AdView mAdView;
@@ -31,7 +38,6 @@ public class home extends AppCompatActivity implements View.OnClickListener {
         mVideo.setOnClickListener(this);
         mResult.setOnClickListener(this);
         mMaterial.setOnClickListener(this);
-
 
 
     }
