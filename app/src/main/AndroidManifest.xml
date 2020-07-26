@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Dash" />
+        <activity android:name=".Auth" />
 
         <meta-data
             android:name="preloaded_fonts"

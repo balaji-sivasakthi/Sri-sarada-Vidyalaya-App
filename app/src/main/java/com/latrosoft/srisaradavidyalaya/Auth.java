@@ -1,13 +1,17 @@
 package com.latrosoft.srisaradavidyalaya;
 
-import android.os.Bundle;
+import com.latrosoft.srisaradavidyalaya.base.BaseActivity;
+import com.latrosoft.srisaradavidyalaya.databinding.ActivityAuthBinding;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class Auth extends BaseActivity<ActivityAuthBinding> {
 
-public class Auth extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auth);
+    protected int getLayoutId() {
+        return R.layout.activity_auth;
+    }
+
+    @Override
+    protected void initViews() {
+
     }
 }

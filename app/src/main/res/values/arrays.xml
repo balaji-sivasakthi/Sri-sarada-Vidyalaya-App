@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listItemTitles">
+        <item>Play Now</item>
+        <item>Study Now</item>
+        <item>Ask Your Question</item>
+    </string-array>
+
+    <string-array name="listItemHeaders">
+        <item>Quiz</item>
+        <item>Videos</item>
+        <item>Questions &amp; Answers</item>
+    </string-array>
+
+    <integer-array name="listItemBgDrawables">
+        <item>@drawable/rec1</item>
+        <item>@drawable/rec2</item>
+        <item>@drawable/rec3</item>
+    </integer-array>
+
+    <integer-array name="listItemIconDrawables">
+        <item>@drawable/play</item>
+        <item>@drawable/question</item>
+        <item>@drawable/question</item>
+    </integer-array>
+
+
+</resources>

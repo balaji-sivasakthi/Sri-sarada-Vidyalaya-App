@@ -1,25 +1,24 @@
 package com.latrosoft.srisaradavidyalaya;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 
-public class MainActivity extends AppCompatActivity {
+import com.latrosoft.srisaradavidyalaya.base.BaseActivity;
+import com.latrosoft.srisaradavidyalaya.databinding.ActivityMainBinding;
+
+public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent i =new Intent(MainActivity.this,Dash.class);
-                startActivity(i);
-                finish();
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
 
-            }
-        },3000);
+    @Override
+    protected void initViews() {
+        new Handler().postDelayed(() -> {
+            Intent i = new Intent(MainActivity.this, Dash.class);
+            startActivity(i);
+            finish();
+        }, 3000);
     }
 }
